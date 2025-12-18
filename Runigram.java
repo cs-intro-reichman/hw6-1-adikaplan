@@ -151,9 +151,9 @@ public class Runigram {
 		int indexI = 0;
 		int indexJ = 0;
 		for(int i=0; i<height; i++){
-			indexI = (int) Math.round(i * ((double)image.length / height));
+			indexI = (int)(i * ((double)image.length / height));
 			for(int j=0; j< width; j++){
-				indexJ = (int) Math.round(j * ((double)image[0].length / width));
+				indexJ = (int)(j * ((double)image[0].length / width));
 				if(indexI < image.length && indexJ < image[0].length){
 					scale[i][j] = image[indexI][indexJ];
 				}	
